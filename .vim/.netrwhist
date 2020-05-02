@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home'
+let g:netrw_dirhist_2='/home/james'
+let g:netrw_dirhist_3='/home/james/COMP3300'
+let g:netrw_dirhist_4='/home/james/Documents/programming/Chaminnovation/txt'
+let g:netrw_dirhist_5='/home/james/.config/autostart'
+let g:netrw_dirhist_6='/home/james'
