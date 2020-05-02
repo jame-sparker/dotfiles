@@ -1,0 +1,43 @@
+#!/bin/bash
+# ===== PATH ======
+
+# Personal scripts
+export PATH="~/scripts:$PATH"
+
+# pypy
+export PATH="/usr/local/pypy2/bin:$PATH"
+
+# Zotero
+export PATH="/usr/local/zotero:$PATH"
+
+# Bluejeans (conference for fb)
+export PATH="/opt/bluejeans:$PATH"
+
+# Google Mock
+export PATH="/usr/local/googlemock:$PATH"
+
+# Cling
+export PATH="/usr/local/cling_2018-11-01_ubuntu18/bin:$PATH"
+
+# Pycharm
+export PATH="/usr/local/pycharm-2017.2.1/bin:$PATH"
+
+# clipboard pasting
+alias "cs=xclip -selection clipboard"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/home/james/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/home/james/anaconda3/etc/profile.d/conda.sh" ]; then
+#       . "/home/james/anaconda3/etc/profile.d/conda.sh"
+#    else
+        export PATH="/home/james/anaconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+# <<< conda initialize <<<
+
+
