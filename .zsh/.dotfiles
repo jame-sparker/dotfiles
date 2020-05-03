@@ -11,8 +11,7 @@
 # dotfiles push
 #
 # 2. Setting up on other computer
-# mkdir .zsh
-# git clone --bare https://github.com/jame-sparker/dotfiles.git $HOME/.zsh/.dotfiles
+# git clone --bare https://github.com/jame-sparker/dotfiles.git $HOME/.dotfiles
 # dotfiles checkout
 DIR=~/.dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
