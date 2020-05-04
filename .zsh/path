@@ -1,8 +1,7 @@
-#!/bin/bash
 # ===== PATH ======
 
 # Personal scripts
-export PATH="~/scripts:$PATH"
+export PATH="$HOME/scripts:$PATH"
 
 # pypy
 export PATH="/usr/local/pypy2/bin:$PATH"
