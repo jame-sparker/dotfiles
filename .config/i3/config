@@ -214,11 +214,17 @@ bindsym XF86AudioPrev exec playerctl previous && cmus-remote -r
 # Take a screenshot
 bindsym Print exec --no-startup-id "scrot -m -e 'mv $f ~/Pictures/screenshot%y%m%d%H%M.png'"
 bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/screenshot%y%m%d%H%M.png'
-# Bind common programs
+
+## Bind common programs
 # exec google-chrome
 bindsym $mod+c exec google-chrome
+
 # exec nnn
 bindsym $mod+n exec gnome-terminal -e nnn
+
+# exec
+bindsym $mod+m exec gnome-terminal -e cmus
+
 
 # Set wallpaper
 exec_always --no-startup-id ~/.config/i3/random_wall_paper.sh
