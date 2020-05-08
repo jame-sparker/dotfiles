@@ -15,6 +15,6 @@ dotfiles push
 
 2. Setting up on other computer
 ```
-git clone --bare https://github.com/jame-sparker/dotfiles.git $HOME/.dotfiles
+git clone --recurse-submodules -j8 --bare https://github.com/jame-sparker/dotfiles.git $HOME/.dotfiles
 dotfiles checkout
 ```

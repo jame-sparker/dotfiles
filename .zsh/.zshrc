@@ -8,7 +8,7 @@ setopt hist_reduce_blanks # remove superfluous blanks from history items
 # End of lines configured by zsh-newuser-install
 
 ## The following lines were added by compinstall
-zstyle :compinstall filename '/home/james/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 # Enable Auto completion
 autoload -Uz compinit
