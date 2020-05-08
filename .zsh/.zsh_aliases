@@ -1,3 +1,6 @@
+# Allow alias in sudo
+alias sudo='sudo '
+
 # Some ls aliases
 alias ls='ls --color'
 alias ll='ls -alF'

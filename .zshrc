@@ -9,6 +9,6 @@ source ~/.zsh/.zshrc
 source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh
 
 [ -f ~/.zsh/.fzf.zsh ] && source ~/.zsh/.fzf.zsh
