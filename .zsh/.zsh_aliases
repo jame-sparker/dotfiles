@@ -60,3 +60,8 @@ alias grb='git rebase'
 
 alias gsb='git status -sb'
 alias gst='git status'
+
+# Conda
+alias cac='conda-activate'
+alias ci='conda install'
+alias ca='conda activate'

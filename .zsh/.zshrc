@@ -115,6 +115,9 @@ source ~/.zsh/path
 # Dotfile configurations
 source ~/.zsh/.dotfiles
 
+# Conda setup script
+source ~/.zsh/.conda
+
 # ====== User defined functions ======
 
 # Add an "alert" alias for long running commands.  Use like so:
