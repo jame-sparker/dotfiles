@@ -12,7 +12,6 @@ zstyle :compinstall filename '~/.zshrc'
 
 # Enable Auto completion
 autoload -Uz compinit
-zstyle ':completion:*' menu select
 zmodload zsh/complist # more auto completion
 setopt COMPLETE_ALIASES # auto completion for aliases
 compinit
@@ -91,6 +90,7 @@ bindkey '^M' expand-dots-then-accept-line
 
 # zsh-z plugin
 source ~/.zsh/zsh-z.plugin.zsh
+zstyle ':completion:*' menu select
 
 # Auto suggestion plugin
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

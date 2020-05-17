@@ -46,7 +46,8 @@ call plug#end()
 " Allow settings in ftplugin to be installed
 filetype plugin indent on
 
-" Allow settings in config to be loaded"
+
+" ====== Allow settings in config to be loaded ======
 for f in split(glob('~/.vim/config/*.vim'), '\n')
   exe 'source' f
 endfor
