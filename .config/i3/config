@@ -193,11 +193,10 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures
 bindsym $mod+c exec google-chrome
 
 # exec nnn
-bindsym $mod+n exec gnome-terminal -e "nnn -x" 
-bindsym $mod+p exec nnn
+bindsym $mod+n exec gnome-terminal -- ~/.config/nnn/nwrap 
 
 # exec
-bindsym $mod+m exec gnome-terminal -e cmus
+bindsym $mod+m exec gnome-terminal -- cmus
 
 
 # Set wallpaper

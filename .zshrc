@@ -12,3 +12,5 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh
 
 [ -f ~/.zsh/.fzf.zsh ] && source ~/.zsh/.fzf.zsh
+
+source .nnn

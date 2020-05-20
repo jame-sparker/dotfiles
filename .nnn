@@ -1,3 +1,5 @@
 #!/bin/bash
 #export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:imgview'
-export NNN_COLORS='1234'
+export NNN_COLORS='2234'
+
+
