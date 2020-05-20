@@ -29,6 +29,8 @@ nnoremap <leader>f 1z=
 
 " Toggle spellchecking
 nnoremap <leader>s :set spell!<CR>
+
+" Clear highlight
 nnoremap <leader>d :let @/=""<CR>
 
 " Allow repeat operation on visual mode
