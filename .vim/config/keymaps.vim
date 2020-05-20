@@ -28,7 +28,8 @@ inoremap <C-c> <Esc><Esc>
 nnoremap <leader>f 1z=
 
 " Toggle spellchecking
-nnoremap <leader>s :set spell!
+nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>d :let @/=""<CR>
 
 " Allow repeat operation on visual mode
 vnoremap . :norm.<CR>
