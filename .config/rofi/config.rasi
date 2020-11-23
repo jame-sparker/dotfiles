@@ -1,7 +1,7 @@
 configuration {
     bw: 0;
-    color-window: "argb:a0002b37, #002b37, #003642";
-    color-normal: "argb:a0002b37, #819396, argb:a0002b37, #003642, #819396";
+    color-window: "argb:d8002b37, #002b37, #003642";
+    color-normal: "argb:00000000, #819396, argb:00000000, #003642, #819396";
     color-active: "#002b37, #008ed4, #002b37, #003642, #008ed4";
     color-urgent: "#002b37, #da4281, #002b37, #003642, #da4281";
     hide-scrollbar: true;
