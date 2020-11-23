@@ -1,5 +1,2 @@
-#!/bin/bash
-
-source ~/.nnn
-nnn
-
+#!/usr/bin/zsh 
+nnn -x

@@ -1,6 +1,7 @@
 " This file defines user defined key maps
 map ;     :Files<CR>
 map <C-n> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeFind<CR>
 map <C-@> :let @/=""<CR>
 map <C-M> :set invnumber \| exec &nu==&rnu? "se nu!" : "se rnu!" <CR>
 map <Tab> gt 
@@ -28,10 +29,13 @@ inoremap <C-c> <Esc><Esc>
 nnoremap <leader>f 1z=
 
 " Toggle spellchecking
-nnoremap <leader>s :set spell!<CR>
+nnoremap <leader>p :set spell!<CR>
 
 " Clear highlight
 nnoremap <leader>d :let @/=""<CR>
 
 " Allow repeat operation on visual mode
 vnoremap . :norm.<CR>
+
+" Changed to sudo if you fail writing a file
+nnoremap <leader>s :w !sudo tee %<CR>

@@ -19,6 +19,7 @@ alias i='sudo apt-get install'
 alias ex='file-roller -e . '
 alias extract='file-roller -e . '
 alias t='gnome-terminal .'
+alias n='nnn'
 
 # git
 alias g='git'
@@ -65,3 +66,6 @@ alias gst='git status'
 alias cac='conda-activate'
 alias ci='conda install'
 alias ca='conda activate'
+
+# multi-monitor setup
+alias mm='autorandr --change'

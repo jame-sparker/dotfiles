@@ -33,3 +33,5 @@ xinput --set-prop $DEVICE "Synaptics Two-Finger Scrolling" 1 1
 # remap Esc key and Caps lock
 setxkbmap -option caps:swapescape
 
+# Faster key movements
+xset r rate 250 50

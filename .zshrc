@@ -13,4 +13,4 @@ source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 [ -f ~/.zsh/.fzf.zsh ] && source ~/.zsh/.fzf.zsh
 
-source .nnn
+source ~/.nnn

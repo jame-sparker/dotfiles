@@ -72,7 +72,6 @@ bindysm $mod+t split toggle  # not working why?
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -163,8 +162,8 @@ set $urgent-bg-color     #E53935
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # start dmenu (a program launcher)
-bindsym $mod+Shift+d exec rofi -show drun -show-icons
 bindsym $mod+d exec rofi -show run
+bindsym $mod+Shift+d exec rofi -show drun -show-icons
 
 # User added functions
 exec --no-startup-id redshift-gtk
@@ -174,7 +173,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && play 
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && play -v 0.4 /usr/share/sounds/gnome/default/alerts/drip.ogg #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # toggle mute
 
-# Sreen brightness controls
+# Screen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
 #bindsym XF86MonBrightnessDown exec [[ `xbacklight -get` -lt 10 ]] && [[ `xbacklight -get` -gt 1 ]] && xbacklight -set 1 || xbacklight -dec 10
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/brightness-down.sh
@@ -195,9 +194,11 @@ bindsym $mod+c exec google-chrome
 # exec nnn
 bindsym $mod+n exec gnome-terminal -- ~/.config/nnn/nwrap 
 
-# exec
+# exec cmus (music)
 bindsym $mod+m exec gnome-terminal -- cmus
 
+# exec subl
+bindsym $mod+s exec subl
 
 # Set wallpaper
 exec_always --no-startup-id ~/.config/i3/random_wall_paper.sh

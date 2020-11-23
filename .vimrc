@@ -1,22 +1,6 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" " alternatively, pass a path where Vundle should install plugins
-" "call vundle#begin('~/some/path/here')
-"
-" " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'ap/vim-css-color'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-" -- End of Vundle Config --
-
-
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -25,21 +9,27 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-
 "  --->>> Vim Plug: Plug in installations >>>---
 call plug#begin('~/.vim/plugged')
 
 " List of plugins
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'lifepillar/vim-mucomplete'
+Plug 'scrooloose/nerdtree' " open folder with ctrl+n
+Plug 'rust-lang/rust.vim' " Rust
+Plug 'tpope/vim-fugitive' " Git e.g. Gwrite
+Plug 'davidhalter/jedi-vim' " Python auto complete
 
-Plug 'ryanoasis/vim-devicons' " load it last
+Plug 'vim-airline/vim-airline' " statusline
+Plug 'vim-airline/vim-airline-themes'
 
-" Don't forget to save the file and call
+" Load this last!!
+Plug 'ryanoasis/vim-devicons' " icons next to files
+
+" === When you finish, call
+" :source %
 " :PlugInstall
+" ===
 call plug#end()
 "  ---<<< Vim Plug: End of Installations <<<---
 

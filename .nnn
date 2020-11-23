@@ -1,5 +1,7 @@
 #!/bin/bash
-#export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:imgview'
-export NNN_COLORS='2234'
+EDIT_FILE="vim \$nnn"
+NNN_PLUG="o:fzopen;"
 
+export NNN_PLUG
+export NNN_OPTS="x"
 

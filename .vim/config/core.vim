@@ -13,3 +13,7 @@ let mapleader=" "
 " Spell check
 set spell spelllang=en_us
 set spell!  " turn off spell check by default
+
+" Set statusbar theme
+let g:airline_theme='powerlineish'
+
