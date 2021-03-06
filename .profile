@@ -20,7 +20,6 @@ fi
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 export PATH=$PATH:/usr/local/MiniZinc:/usr/local/MATLAB/R2017a/bin
-export PATH="$HOME/.cargo/bin:$PATH"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
 # mousepad natual horizontal scrolling
@@ -35,3 +34,4 @@ setxkbmap -option caps:swapescape
 
 # Faster key movements
 xset r rate 250 50
+source "$HOME/.cargo/env"
