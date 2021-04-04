@@ -33,5 +33,5 @@ xinput --set-prop $DEVICE "Synaptics Two-Finger Scrolling" 1 1
 setxkbmap -option caps:swapescape
 
 # Faster key movements
-xset r rate 250 50
+xset r rate 200 50
 source "$HOME/.cargo/env"
