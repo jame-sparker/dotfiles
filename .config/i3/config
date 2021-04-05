@@ -189,7 +189,7 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures
 
 ## Bind common programs
 # exec google-chrome
-bindsym $mod+c exec google-chrome
+bindsym $mod+c exec google-chrome-stable
 
 # exec nnn
 bindsym $mod+n exec gnome-terminal -- ~/.config/nnn/nwrap 

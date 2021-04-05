@@ -19,19 +19,18 @@ fi
 # set PATH so it includes user's private bin directories
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
-export PATH=$PATH:/usr/local/MiniZinc:/usr/local/MATLAB/R2017a/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
 # mousepad natual horizontal scrolling
-DEVICE=`xinput list | grep "04F3:300F Touchpad" | grep -oP "id=\K[0-9]*"`
-PROPS=`xinput list-props $DEVICE | grep "Synaptics Scrolling" | grep -oP "\(\K[0-9]*"`
+# code obsolete in arch
+# DEVICE=`xinput list | grep "04F3:300F Touchpad" | grep -oP "id=\K[0-9]*"`
+# PROPS=`xinput list-props $DEVICE | grep "Synaptics Scrolling" | grep -oP "\(\K[0-9]*"`
 
-xinput --set-prop $DEVICE $PROPS -74 -74
-xinput --set-prop $DEVICE "Synaptics Two-Finger Scrolling" 1 1
+# xinput --set-prop $DEVICE $PROPS -74 -74
+# xinput --set-prop $DEVICE "Synaptics Two-Finger Scrolling" 1 1
 
 # remap Esc key and Caps lock
 setxkbmap -option caps:swapescape
 
 # Faster key movements
 xset r rate 200 50
-source "$HOME/.cargo/env"
