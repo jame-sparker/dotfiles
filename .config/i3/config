@@ -125,10 +125,9 @@ bindsym $mod+i resize shrink height 10 px or 10 ppt
 bindsym $mod+o resize grow width 10 px or 10 ppt
 
 # === System mode === 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot
+set $mode_system System (s) suspend, (e) logout, (d) shutdown, (r) reboot
 mode "$mode_system" {
-        bindsym l exec --no-startup-id exec gnome-screensaver-command -l, mode "default"
-        bindsym e exit # logout
+        bindsym e exec --no-startup-id dm-tool lock # logout
         bindsym s exec --no-startup-id systemctl suspend, mode "default"
         bindsym r exec --no-startup-id reboot
         bindsym d exec --no-startup-id shutdown
@@ -192,10 +191,10 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures
 bindsym $mod+c exec google-chrome-stable
 
 # exec nnn
-bindsym $mod+n exec gnome-terminal -- ~/.config/nnn/nwrap 
+bindsym $mod+n exec i3-sensible-terminal -e ~/.config/nnn/nwrap 
 
 # exec cmus (music)
-bindsym $mod+m exec gnome-terminal -- cmus
+bindsym $mod+m exec i3-sensible-terminal -e cmus
 
 # exec subl
 bindsym $mod+s exec subl

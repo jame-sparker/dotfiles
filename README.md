@@ -3,7 +3,7 @@
 
 ## Usage
 
-1. Adding files 
+### Adding files 
 ```
 dotfiles status
 dotfiles add .vimrc
@@ -16,5 +16,8 @@ dotfiles push
 2. Setting up on other computer
 ```
 git clone --recurse-submodules -j8 --bare https://github.com/jame-sparker/dotfiles.git $HOME/.dotfiles
+alias dotfiles 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotfiles submodule update --init --recursive
 dotfiles checkout
 ```

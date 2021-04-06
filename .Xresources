@@ -1,1 +1,11 @@
-URxvt.font: xft:monaco:size=16
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+
+##include ".Xresources.d/urxvt/config"
+##include ".Xresources.d/urxvt/keysyms"
+#include ".Xresources.d/urxvt/fonts"
+#include ".Xresources.d/urxvt/colors"
