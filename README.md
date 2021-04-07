@@ -1,5 +1,6 @@
 # dotfiles
 #### For maintaining dot files in my computer
+#### Note: This branch is for my old Ubuntu. See the main branch for instructions on setting up.
 
 ## Usage
 
