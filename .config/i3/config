@@ -57,7 +57,7 @@ bindsym $mod+b split h
 bindsym $mod+v split v
 
 # toggle spliting orientation
-bindysm $mod+t split toggle  # not working why?
+bindsym $mod+t split toggle
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -174,18 +174,19 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+d exec rofi -show drun -show-icons
 
-# User added functions
-exec --no-startup-id redshift-gtk
+# Redshift daemon
+exec /usr/lib/geoclue-2.0/demos/agent
+# exec --no-startup-id redshift
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+ && play -v 0.4 /usr/share/sounds/gnome/default/alerts/drip.ogg #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%- && play -v 0.4 /usr/share/sounds/gnome/default/alerts/drip.ogg #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-mute 0 false; exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-mute 0 false; exec pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # toggle mute
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 10 # increase screen brightness
-#bindsym XF86MonBrightnessDown exec [[ `xbacklight -get` -lt 10 ]] && [[ `xbacklight -get` -gt 1 ]] && xbacklight -set 1 || xbacklight -dec 10
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.config/i3/brightness-down.sh
+bindsym XF86MonBrightnessUp exec light -A 1
+bindsym XF86MonBrightnessDown exec light -U 1
+
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause && ~/.config/i3/toggle-cmus.sh
 bindsym XF86AudioPause exec playerctl pause
