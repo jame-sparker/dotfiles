@@ -1,8 +1,60 @@
+URxvt*fading:  30
+
+! fonts
+URxvt.font: xft:MesloLGS NF:size=13
+
+! colors
+! special
+URxvt.depth: 32
+*.foreground:   #d8dee8
+*.background: [90]#2f343f
+*.cursorColor:  #b48ead
+
+! black
+*.color0  : #4b5262
+*.color8  : #434a5a
+
+! red
+*.color1  : #bf616a
+*.color9  : #b3555e
+
+! green
+*.color2  : #a3be8c
+*.color10 : #93ae7c
+
+! yellow
+*.color3  : #ebcb8b
+*.color11 : #dbbb7b
+
+! blue
+*.color4  : #81a1c1
+*.color12 : #7191b1
+
+! magenta
+*.color5  : #b48ead
+*.color13 : #a6809f
+
+! cyan
+*.color6  : #89d0bA
+*.color14 : #7dbba8
+
+! white
+*.color7  : #e5e9f0
+*.color15 : #d1d5dc⇧
+
+
+! keys
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Disable default keybinds
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.Control-Meta-c: builtin-string:
+URxvt.keysym.Control-Meta-v: builtin-string:
+
+! Scrolling options
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
-
 URxvt.scrollColor:[40]#B2B2B2 
-##include ".Xresources.d/urxvt/config"
-#include ".Xresources.d/urxvt/keys"
-#include ".Xresources.d/urxvt/fonts"
-#include ".Xresources.d/urxvt/colors"
