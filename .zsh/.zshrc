@@ -23,21 +23,19 @@ autoload -U colors && colors
 
 # Set editor
 export EDITOR=vim
+# 10ms for key sequences
+export KEYTIMEOUT=1
 
-# vi mode
-bindkey -v
-export KEYTIMEOUT=1 # 10ms for key sequences
+# Alt arrow to jump between words
+bindkey "[C" forward-word
+bindkey "[D" backward-word
 
-# Alt arrow to jump between words and avoid getting into vim mode
-bindkey "^[[1;3C" forward-word
-bindkey "^[[1;3D" backward-word
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -v '^?' backward-delete-char
 
 # History based on partially typed commands
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
