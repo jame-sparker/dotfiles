@@ -1,9 +1,11 @@
+!! experiments
+! Fade characters on out of focus
 URxvt*fading:  30
 
-! fonts
+!! fonts
 URxvt.font: xft:MesloLGS NF:size=13
 
-! colors
+!! colors
 ! special
 URxvt.depth: 32
 *.foreground:   #d8dee8
@@ -42,19 +44,32 @@ URxvt.depth: 32
 *.color7  : #e5e9f0
 *.color15 : #d1d5dc⇧
 
-
-! keys
+!! keysbindings 
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 
-! Disable default keybinds
+! Disable default keybindings
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 URxvt.keysym.Control-Meta-c: builtin-string:
 URxvt.keysym.Control-Meta-v: builtin-string:
 
-! Scrolling options
+!! Scrollbar
 URxvt.scrollstyle: plain
 URxvt.scrollBar_right: true
 URxvt.scrollColor:[40]#B2B2B2 
+
+!! Scroll behaviour on secondary screen
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
+
+!! Skip scroling when lots of lines are displayed
+URxvt*skipScroll:  true
+
+!! Extensions
+URxvt.perl-ext: default,url-select,matcher
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.matcher.button: 1
