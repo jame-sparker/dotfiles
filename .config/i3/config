@@ -213,7 +213,7 @@ bindsym $mod+s exec subl
 exec_always --no-startup-id ~/.config/i3/random_wall_paper.sh
 
 # Transparent screens
-exec --no-startup-id picom
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Japanese keyboard 
 exec --no-startup-id fcitx
