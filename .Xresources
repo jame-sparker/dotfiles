@@ -1,6 +1,6 @@
 !! experiments
 ! Fade characters on out of focus
-URxvt*fading:  30
+URxvt*fading: 15
 
 !! fonts
 URxvt.font: xft:MesloLGS NF:size=13
