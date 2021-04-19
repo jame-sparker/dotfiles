@@ -1,0 +1,3 @@
+#!/bin/bash
+brightnessctl -d "asus::kbd_backlight" set 3
+urxvt -name fullScreen +sb -e sh -c "sleep 0.01; cmatrix"
