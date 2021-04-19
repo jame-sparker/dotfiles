@@ -186,6 +186,14 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # toggle
 bindsym XF86MonBrightnessUp exec light -A 1
 bindsym XF86MonBrightnessDown exec light -U 1
 
+# Keyboard backlight
+# run `sudo showkey` and add 8 to the value to find keycode
+bindcode 237 exec --no-startup-id brightnessctl -d "asus::kbd_backlight" set 1-
+bindcode 238 exec --no-startup-id brightnessctl -d "asus::kbd_backlight" set +1
+
+# Asus Settings
+bindcode 211 exec --no-startup-id asusctl profile -n
+
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play-pause && ~/.config/i3/toggle-cmus.sh
 bindsym XF86AudioPause exec playerctl pause
@@ -221,3 +229,9 @@ exec --no-startup-id fcitx
 
 # KDE connect indicator
 #exec --no-startup-id kdeconnect-indicator
+
+# Full screen config
+for_window [instance="fullScreen"] fullscreen enable
+
+bindcode 156 exec $HOME/.config/i3/zephyrus
+
