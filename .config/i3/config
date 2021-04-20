@@ -174,8 +174,8 @@ bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+d exec rofi -show drun -show-icons
 
 # Redshift daemon
-exec /usr/lib/geoclue-2.0/demos/agent
-# exec --no-startup-id redshift
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+exec --no-startup-id redshift
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-mute 0 false; exec pactl set-sink-volume 0 +5%
@@ -183,8 +183,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-mute 0 false; e
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # toggle mute
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 1
-bindsym XF86MonBrightnessDown exec light -U 1
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 1
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 1
 
 # Keyboard backlight
 # run `sudo showkey` and add 8 to the value to find keycode
@@ -206,16 +206,16 @@ bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures
 
 ## Bind common programs
 # exec google-chrome
-bindsym $mod+c exec google-chrome-stable
+bindsym $mod+c exec --no-startup-id google-chrome-stable
 
 # exec nnn
-bindsym $mod+n exec i3-sensible-terminal -e ~/.config/nnn/nwrap 
+bindsym $mod+n exec --no-startup-id i3-sensible-terminal -e ~/.config/nnn/nwrap 
 
 # exec cmus (music)
-bindsym $mod+m exec i3-sensible-terminal -e cmus
+bindsym $mod+m exec --no-startup-id i3-sensible-terminal -e cmus
 
 # exec subl
-bindsym $mod+s exec subl
+bindsym $mod+s exec --no-startup-id subl
 
 # Set wallpaper
 exec_always --no-startup-id ~/.config/i3/random_wall_paper.sh
@@ -233,5 +233,5 @@ exec --no-startup-id fcitx
 # Full screen config
 for_window [instance="fullScreen"] fullscreen enable
 
-bindcode 156 exec $HOME/.config/i3/zephyrus
+bindcode 156 exec --no-startup-id $HOME/.config/i3/zephyrus
 
