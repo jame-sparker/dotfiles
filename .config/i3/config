@@ -172,7 +172,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run
 bindsym $mod+Shift+d exec rofi -show drun -show-icons
-
+bindsym $mod+semicolon exec rofi -modi "emoji:/usr/bin/rofimoji -a copy" -show emoji
 # Redshift daemon
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift
