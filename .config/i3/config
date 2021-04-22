@@ -152,9 +152,6 @@ set $urgent-bg-color     #E53935
 # Enable gaps
 for_window [class=".*"] border pixel 2
 
-# Only enable gaps on a workspace when there is at least one container
-smart_gaps on
-
 # Activate smart borders (always)
 smart_borders on
 
@@ -163,7 +160,7 @@ bindsym $mod+Shift+o  gaps outer current minus 5
 bindsym $mod+Shift+u  gaps inner current plus 5
 bindsym $mod+Shift+i  gaps inner current minus 5
 bindsym $mod+Shift+p  gaps inner current set 0; gaps outer current set 0
-
+bindsym $mod+Shift+t  gaps inner current set 20; gaps outer current set 0
 
 
 # Enable polybar
