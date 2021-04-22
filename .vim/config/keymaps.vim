@@ -1,3 +1,6 @@
+" Set leader to space bar
+let mapleader=" "
+
 " This file defines user defined key maps
 map ;     :Files<CR>
 map <C-n> :NERDTreeToggle<CR>

@@ -13,7 +13,6 @@ set expandtab
 call plug#begin('~/.vim/plugged')
 
 " List of plugins
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree' " open folder with ctrl+n
 Plug 'rust-lang/rust.vim' " Rust
@@ -37,10 +36,12 @@ call plug#end()
 filetype plugin indent on
 
 
-" ====== Allow settings in config to be loaded ======
-for f in split(glob('~/.vim/config/*.vim'), '\n')
-  exe 'source' f
-endfor
+" ====== Load other settings ======
+source ~/.vim/config/core.vim
+source ~/.vim/config/keymaps.vim
+source ~/.vim/config/lightline.vim
+source ~/.vim/config/mucomplete.vim
 
-" Synchronize with clipboard"
-set clipboard=unnamedplus
+let g:airline_powerline_fonts = 1
+" Synchronize clipboard with the system clipboard
+set clipboard^=unnamed,unnamedplus

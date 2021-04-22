@@ -1,6 +1,6 @@
 !! fonts
-URxvt.font: xft:MesloLGS NF:size=13
-
+!URxvt.font: xft:MesloLGS NF:size=13,xft:Noto Emoji:minspace=False,xft:PowerlineSymbols
+URxvt.font: xft:MesloLGS NF:size=13, xft:PowerlineSymbols
 !! colors
 ! special
 URxvt.depth: 32
