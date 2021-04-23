@@ -7,7 +7,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+font pango:DejaVu Sans Mono 8
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -198,8 +198,8 @@ bindsym XF86AudioNext exec playerctl next && cmus-remote -n
 bindsym XF86AudioPrev exec playerctl previous && cmus-remote -r
 
 # Take a screenshot
-bindsym Print exec --no-startup-id "scrot -m -e 'mv $f ~/Pictures/screenshot%y%m%d%H%M.png'"
-bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/screenshot%y%m%d%H%M.png'
+bindsym Print exec --no-startup-id "scrot -m -e 'mv $f ~/Pictures/screenshot_%Y-%m-%d_%H:%M:%S.png'"
+bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f ~/Pictures/screenshot_%Y-%m-%d_%H:%M:%S.png'
 
 ## Bind common programs
 # exec google-chrome

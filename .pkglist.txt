@@ -75,6 +75,7 @@ rofimoji
 rsync
 ruby
 rxvt-unicode
+scrot
 siji-git
 sublime-text
 sudo
