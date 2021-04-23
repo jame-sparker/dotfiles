@@ -8,5 +8,4 @@ RANDOM=$(date +%Y)$(date +%W)
 IMAGE_INDEX=$[$RANDOM % SIZE]
 echo Setting wallpaper to ${FILES[$IMAGE_INDEX]}
 
-wal -s -t -i ${FILES[$IMAGE_INDEX]}
-
+wal -s -i ${FILES[$IMAGE_INDEX]}

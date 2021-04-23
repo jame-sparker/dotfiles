@@ -4,41 +4,41 @@ URxvt.font: xft:MesloLGS NF:size=13, xft:PowerlineSymbols
 !! colors
 ! special
 URxvt.depth: 32
-*.foreground:   #d8dee8
-*.background: [90]#2f343f
-*.cursorColor:  #b48ead
+URxvt.foreground:   #d8dee8
+URxvt.background: [90]#2f343f
+URxvt.cursorColor:  #b48ead
 
 ! black
-*.color0  : #4b5262
-*.color8  : #434a5a
+URxvt.color0  : #4b5262
+URxvt.color8  : #434a5a
 
 ! red
-*.color1  : #bf616a
-*.color9  : #b3555e
+URxvt.color1  : #bf616a
+URxvt.color9  : #b3555e
 
 ! green
-*.color2  : #a3be8c
-*.color10 : #93ae7c
+URxvt.color2  : #a3be8c
+URxvt.color10 : #93ae7c
 
 ! yellow
-*.color3  : #ebcb8b
-*.color11 : #dbbb7b
+URxvt.color3  : #ebcb8b
+URxvt.color11 : #dbbb7b
 
 ! blue
-*.color4  : #81a1c1
-*.color12 : #7191b1
+URxvt.color4  : #81a1c1
+URxvt.color12 : #7191b1
 
 ! magenta
-*.color5  : #b48ead
-*.color13 : #a6809f
+URxvt.color5  : #b48ead
+URxvt.color13 : #a6809f
 
 ! cyan
-*.color6  : #89d0bA
-*.color14 : #7dbba8
+URxvt.color6  : #89d0bA
+URxvt.color14 : #7dbba8
 
 ! white
-*.color7  : #e5e9f0
-*.color15 : #d1d5dc⇧
+URxvt.color7  : #e5e9f0
+URxvt.color15 : #d1d5dc⇧
 
 !! Fade characters on out of focus
 URxvt*fading: 15
