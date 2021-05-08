@@ -127,9 +127,6 @@ mode "$mode_system" {
 # Lock screen
 bindsym $mod+shift+x exec systemctl suspend, mode "default"
 
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exit
-
 bindsym $mod+Alt_R mode "$mode_system"
 # === End of system mode === 
 
@@ -213,6 +210,9 @@ bindsym $mod+m exec --no-startup-id i3-sensible-terminal -e cmus
 
 # exec subl
 bindsym $mod+s exec --no-startup-id subl
+
+# exec subl
+bindsym $mod+Shift+s exec --no-startup-id scrcpy
 
 # Set wallpaper
 exec_always --no-startup-id ~/.config/i3/random_wall_paper.sh
