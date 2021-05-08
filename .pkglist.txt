@@ -1,4 +1,7 @@
 adobe-source-han-sans-jp-fonts
+alsa-utils
+android-sdk-platform-tools
+android-udev
 arandr
 asus-nb-ctrl-git
 autoconf
@@ -60,9 +63,11 @@ picom
 pkgconf
 playerctl
 polybar
+portaudio
 powerline-fonts
 pulseaudio
 pulseaudio-bluetooth
+python-pip
 python-pywal
 qbittorrent
 qimgv-light
@@ -74,7 +79,9 @@ rofi
 rofimoji
 rsync
 ruby
+rust
 rxvt-unicode
+scrcpy
 scrot
 siji-git
 sublime-text
@@ -88,6 +95,7 @@ unrar
 unzip
 urxvt-perls
 vi
+vlc
 vscodium-bin
 webcamoid
 wget
@@ -142,4 +150,5 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 yay
+zoom
 zsh
