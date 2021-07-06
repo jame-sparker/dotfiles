@@ -2,4 +2,4 @@
 update_info=filepicker.upd:filepicker-remove-old-previews-entry
 
 [Colors:View]
-BackgroundNormal=03,32,64
+BackgroundNormal=#40464d
