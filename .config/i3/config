@@ -169,7 +169,7 @@ bindsym $mod+Shift+d exec rofi -show drun -show-icons
 bindsym $mod+semicolon exec rofi -modi "emoji:/usr/bin/rofimoji -a copy" -show emoji
 # Redshift daemon
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
-exec --no-startup-id redshift
+exec --no-startup-id redshift -O 4000
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-mute 0 false; exec pactl set-sink-volume 0 +5%

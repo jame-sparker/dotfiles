@@ -74,4 +74,4 @@ alias ci='conda install'
 alias ca='conda activate'
 
 # multi-monitor setup
-alias mm='autorandr --change && i3-msg restart' 
+alias mm='autorandr --change && i3-msg restart && setxkbmap -option caps:swapescape'
