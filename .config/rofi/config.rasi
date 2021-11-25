@@ -1,16 +1,12 @@
 configuration {
-    bw: 0;
-    color-window: "argb:d8002b37, #002b37, #003642";
-    color-normal: "argb:00000000, #819396, argb:00000000, #003642, #819396";
-    color-active: "#002b37, #008ed4, #002b37, #003642, #008ed4";
-    color-urgent: "#002b37, #da4281, #002b37, #003642, #da4281";
-    hide-scrollbar: true;
-    font: "hack 18";
-    fullscreen: true;
-    lines: 15;
-    line-padding: 10;
-    modi: "window,drun,ssh,combi";
-    padding: 300;
-    separator-style: none;
- }
-
+  modi: "window,run,ssh,combi";
+  timeout {
+      action: "kb-cancel";
+      delay:  0;
+  }
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+@theme "theme"

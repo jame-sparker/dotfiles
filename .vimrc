@@ -28,6 +28,9 @@ Plug 'ryanoasis/vim-devicons' " icons next to files
 " === When you finish, call
 " :source %
 " :PlugInstall
+" 
+" = Updating
+" :PlugUpdate
 " ===
 call plug#end()
 "  ---<<< Vim Plug: End of Installations <<<---
