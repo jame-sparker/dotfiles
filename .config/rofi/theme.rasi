@@ -22,6 +22,7 @@
   text-alt:   #b2b2b2;
   fg:         #abb2bf;
   bg:         #282c34;
+  purple:     #7e6ee4;
 
   spacing: 0;
   background-color: transparent;

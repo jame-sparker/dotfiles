@@ -22,6 +22,7 @@ cowsay
 dolphin
 dunst
 efibootmgr
+evtest
 fakeroot
 fcitx
 fcitx-configtool
@@ -35,8 +36,13 @@ git
 google-chrome
 groff
 gvim
+higan
 i3-gaps
 i3status
+inetutils
+inkscape
+jre-openjdk
+kdenlive
 libtool
 light
 lightdm
@@ -74,6 +80,7 @@ pypy3
 python-pip
 python-pywal
 qbittorrent
+qemu-desktop
 qimgv-light
 qt5ct
 redshift
@@ -107,6 +114,7 @@ webcamoid
 wget
 which
 wine
+winetricks
 xdotool
 xf86-video-vesa
 xorg-bdftopcf
@@ -157,5 +165,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 yay
+zenity
 zoom
 zsh
