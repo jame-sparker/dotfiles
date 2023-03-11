@@ -1,9 +1,6 @@
 [$Version]
 update_info=filepicker.upd:filepicker-remove-old-previews-entry
 
-[Colors:View]
-BackgroundNormal=#40464d
-
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
@@ -19,6 +16,7 @@ Show Speedbar=true
 Show hidden files=false
 Sort by=Name
 Sort directories first=true
+Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=189
 View Style=DetailTree
