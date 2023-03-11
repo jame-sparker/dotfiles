@@ -20,6 +20,7 @@ cmatrix
 cmus
 cowsay
 dolphin
+downgrade
 dunst
 efibootmgr
 evtest
@@ -37,7 +38,7 @@ google-chrome
 groff
 gvim
 higan
-i3-gaps
+i3-wm
 i3status
 inetutils
 inkscape
@@ -90,7 +91,6 @@ rofi
 rofimoji
 rsync
 ruby
-rust
 rxvt-unicode
 scrcpy
 scrot

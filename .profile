@@ -37,3 +37,4 @@ xset r rate 200 50
 
 # Qt5 settings for dolphine file manager
 export QT_QPA_PLATFORMTHEME=qt5ct
+. "$HOME/.cargo/env"
