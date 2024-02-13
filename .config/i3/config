@@ -211,7 +211,7 @@ bindsym $mod+m exec --no-startup-id i3-sensible-terminal -e cmus
 # exec subl
 bindsym $mod+s exec --no-startup-id subl
 
-# exec subl
+# exec scrcpy (android cast) 
 bindsym $mod+Shift+s exec --no-startup-id scrcpy
 
 # Set wallpaper
