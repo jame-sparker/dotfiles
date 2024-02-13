@@ -1,6 +1,7 @@
 adobe-source-han-sans-jp-fonts
 alsa-utils
 android-sdk-platform-tools
+android-studio
 android-udev
 arandr
 asus-nb-ctrl-git
@@ -19,6 +20,7 @@ calibre
 cmatrix
 cmus
 cowsay
+desmume
 dolphin
 downgrade
 dunst
@@ -31,6 +33,7 @@ fcitx-mozc
 feh
 flex
 font-manager
+fuse2
 fzf
 gcc
 git
@@ -42,10 +45,12 @@ i3-wm
 i3status
 inetutils
 inkscape
-jre-openjdk
+jdk-openjdk
 kdenlive
+lib32-faudio-debug
 libtool
 light
+light-debug
 lightdm
 lightdm-webkit-theme-aether
 lightdm-webkit2-greeter
@@ -69,6 +74,7 @@ p7zip
 pacman-contrib
 patch
 pavucontrol
+pdftk
 picom
 pkgconf
 playerctl
@@ -78,6 +84,8 @@ powerline-fonts
 pulseaudio
 pulseaudio-bluetooth
 pypy3
+python-build
+python-installer
 python-pip
 python-pywal
 qbittorrent
@@ -109,6 +117,7 @@ unzip
 urxvt-perls
 vi
 vlc
+voicevox-appimage
 vscodium-bin
 webcamoid
 wget
@@ -165,6 +174,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 yay
+yt-dlp
 zenity
 zoom
 zsh
